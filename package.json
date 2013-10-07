@@ -20,5 +20,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/allouis/Vector2D/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0"
   }
 }
