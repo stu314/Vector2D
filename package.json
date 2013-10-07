@@ -1,0 +1,24 @@
+{
+  "name": "Vector2D",
+  "version": "0.0.0",
+  "description": "2D Vector Class",
+  "main": "Vector2D.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/Vector2D.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/allouis/Vector2D.git"
+  },
+  "keywords": [
+    "Vector"
+  ],
+  "author": "Fabien O'Carroll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allouis/Vector2D/issues"
+  }
+}
