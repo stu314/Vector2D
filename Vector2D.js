@@ -12,7 +12,7 @@ function Vector2D(x,y){
 Vector2D.prototype = {
 
     clone: function(){
-        return new Vector2D(this);
+        return this;
     },
 
     set: function(x, y){
