@@ -1,4 +1,4 @@
-var Vector2D = require("../src/Vector2D");
+var Vector2D = require("../Vector2D");
 var assert = require("assert");
 describe("Vector2D", function(){
 
