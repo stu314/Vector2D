@@ -1,5 +1,8 @@
 module.exports = Vector2D;
-
+function normalizeArgs(x,y){
+    if(y) return {x:x, y:y};
+    return x;
+}
 function Vector2D(x,y){
     if(x === undefined) x = false;
     this.x = x.x || x || 0;    
@@ -13,37 +16,37 @@ Vector2D.prototype = {
     },
 
     set: function(x, y){
-        if(!!y) x = {x:x, y:y};
-        this.x = x.x //|| x; 
-        this.y = x.y //|| y;
+        var v = normalizeArgs(x, y);
+        this.x = v.x 
+        this.y = v.y 
         return this;
     },
 
     add: function(x,y){
-        if(!!y) x = {x:x, y:y};
-        this.x += x.x //|| x; 
-        this.y += x.y //|| y; 
+        var v = normalizeArgs(x, y);
+        this.x += v.x  
+        this.y += v.y  
         return this;
     },
 
     sub: function(x,y){
-        if(!!y) x = {x:x, y:y};
-        this.x -= x.x //|| x; 
-        this.y -= x.y //|| y; 
+        var v = normalizeArgs(x, y);
+        this.x -= v.x  
+        this.y -= v.y  
         return this;
     },
 
     mult: function(x,y){
-        if(!!y) x = {x:x, y:y};
-        this.x *= x.x //|| x; 
-        this.y *= x.y //|| y; 
+        var v = normalizeArgs(x, y);
+        this.x *= v.x  
+        this.y *= v.y  
         return this;
     },
 
     div: function(x,y){
-        if(!!y) x = {x:x, y:y};
-        this.x /= x.x //|| x; 
-        this.y /= x.y //|| y; 
+        var v = normalizeArgs(x, y);
+        this.x /= v.x 
+        this.y /= v.y  
         return this;
     },
 
