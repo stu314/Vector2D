@@ -3,4 +3,4 @@ Vector2D
 
 2D Vectors
 
-[![Build Status](https://secure.travis-ci.org/<GITHUB_USER>/<REPO_NAME>.png)](http://travis-ci.org/<GITHUB_USER>/<REPO_NAME>)
+[![Build Status](https://secure.travis-ci.org/allouis/Vector2D.png)](http://travis-ci.org/allouis/Vector2D)
